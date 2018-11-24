@@ -1,0 +1,5 @@
+1:ran:ran:Adminstrator
+2:san:san:chef
+3:ben:ben:chef
+4:neo:neo:Telephone Operator
+5:reo:reo:Telephone Operator

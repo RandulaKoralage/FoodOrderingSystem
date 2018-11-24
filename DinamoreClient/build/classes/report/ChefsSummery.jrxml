@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.2.final using JasperReports Library version 6.2.2  -->
+<!-- 2016-10-29T19:26:41 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bdeaeb17-a320-43bf-8a0a-254266c95ff4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="noOfOrders" class="java.lang.String"/>
+	<parameter name="qty" class="java.lang.String"/>
+	<parameter name="totalTime" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="30" width="200" height="41" forecolor="#470908" uuid="cb67dc76-b69c-4a62-9eff-1369bb0dfdce"/>
+				<textElement textAlignment="Center">
+					<font size="27"/>
+				</textElement>
+				<text><![CDATA[Chefs' Summery]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="170" y="0" width="150" height="30" uuid="0c667c75-fdf1-4274-b3ba-c81de79a8100"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="326" y="2" width="124" height="30" uuid="ed393901-273b-4c1b-b6ef-9b003db2bc3a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="23" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="150" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="0" width="120" height="30" uuid="d46b9832-6e3f-4f95-8831-b8c84c23f3a0"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chef Name ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="40" width="120" height="30" uuid="d5f41049-add6-4307-ad96-da660a3eceb8"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No of Orders]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="80" width="120" height="30" uuid="16422988-676c-42d6-aaf6-a0ad4f0d9d60"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="120" width="120" height="30" uuid="f744716e-9298-47f5-a952-03adba2765c8"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Time Spend]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="0" width="210" height="30" uuid="ebe1deb2-07d2-4d1c-8a22-5848d77d7a8a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="40" width="210" height="30" uuid="35429629-ae39-484b-a422-3a1c73319ecb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{noOfOrders}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="80" width="210" height="30" uuid="6d7e2f7c-db40-44bc-8ab1-5dd815341c56"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="120" width="210" height="30" uuid="ecd8111f-f85a-4f9d-bb5d-e56e72a82845"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalTime}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="16" y="40" width="528" height="20" uuid="0333ac82-c45b-4747-8950-efc75530ea52"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[This is a system generated report]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
